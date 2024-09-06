@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
+interface Actividad {
+  titulo: string;
+  descripcion: string;
+  imagen: string;
+}
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page implements OnInit {
-  actividades = [
+  actividades: Actividad[] = [
     {
       titulo: 'Seminario de Redes',
       descripcion: 'Aprende sobre las últimas tecnologías en redes.',
@@ -22,14 +29,13 @@ export class Tab1Page implements OnInit {
       descripcion: 'Mejora tus habilidades en ciberseguridad.',
       imagen: 'assets/Imagenes/Taller2.png', 
     },
-    
   ];
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
 
   ngOnInit() {}
 
-  verDetalles(item: any) {
-    console.log('Detalles del ítem:', item);
+  verDetalles(item: Actividad) {
+    this.navCtrl.navigateForward('/tabs/tab2');
   }
 }

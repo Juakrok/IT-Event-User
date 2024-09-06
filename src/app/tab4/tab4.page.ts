@@ -7,12 +7,18 @@ import { Component } from '@angular/core';
 })
 export class Tab4Page {
 
-  constructor() { }
+  constructor() {}
 
-  
+  // Función para generar QR
   generarQR() {
+    // Aquí va la lógica para generar el QR
     console.log('Generando QR...');
-    
+  }
+
+  // Función para escanear QR
+  escanearQR() {
+    // Aquí va la lógica para escanear el QR
+    console.log('Escaneando QR...');
   }
 }
 

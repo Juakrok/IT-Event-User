@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'editar',
+    loadChildren: () => import('./editar/editar.module').then(m => m.EditarModule) // Asegúrate de que el nombre del módulo sea correcto
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   }
 ];
 @NgModule({

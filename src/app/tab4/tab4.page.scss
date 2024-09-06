@@ -1,37 +1,13 @@
-.scan-text {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;  
-    font-size: 18px;  
-    font-weight: bold;  
-    color: #333;  
-  }
-  
-  .qr-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60%;  
-  }
-  
-  .qr-image {
-    width: 50%;
-    max-width: 200px;
-    height: auto;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;  
-  }
-  
-  .custom-button {
-    --background: yellow;  
-    --color: black;  
-    --border-radius: 20px;  
-    width: 80%; 
-    max-width: 300px;  
-  }
-  
-  
+ion-card{
+  margin-top: 30%;
+}
+
+ion-card-title{
+  text-align: center;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+ion-buttons{
+  color:black;
+}
