@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { NavController, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-recuperar',
@@ -8,18 +8,22 @@ import { NavController } from '@ionic/angular';
 })
 export class RecuperarPage {
 
-  email: string = '';
+  email: string = ''; 
 
-  constructor(private navCtrl: NavController) { }
+  constructor(private navCtrl: NavController, private alertCtrl: AlertController) {}
 
-  recuperar() {
-    alert('Se ha mandado un correo para recuperar contraseña');
-    this.navCtrl.navigateBack('/inicio');
+  
+  async recuperar() {
+    const alert = await this.alertCtrl.create({
+      header: 'Recuperación de contraseña',
+      message: `Se ha enviado un correo de recuperación a: ${this.email}`,
+      buttons: ['OK']
+    });
+    await alert.present();
   }
 
+  
   goToInicio() {
-    this.navCtrl.navigateBack('/inicio');
+    this.navCtrl.navigateBack('/inicio'); 
   }
 }
-
-

@@ -1,29 +1,17 @@
 
 
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header color="dark" [translucent]="true">
+  <ion-toolbar mode="ios">
     <ion-title>Generador de QR</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
 
-<ion-content [fullscreen]="true" class="content-background">
+<ion-content color="dark" [fullscreen]="true" class="content-background">
   <ion-card>
     <ion-card-header>
-      <ion-card-title>GenerarQR</ion-card-title>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-button (click)="generarQR()" class="rounded-button">
-            Generar QR
-          </ion-button>
-        </ion-buttons>
-        <ion-buttons slot="end">
-          <ion-button (click)="escanearQR()" class="rounded-button">
-            Escanear QR
-          </ion-button>
-        </ion-buttons>
-      </ion-toolbar>
+      <ion-card-title>Escanea el QR</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>

@@ -1,43 +1,33 @@
 
 
 ion-card {
-    --background: #1a1a1a; 
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    --border-radius: 12px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  ion-card img {
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  }
-  
-  ion-card:hover {
-    --box-shadow: 0 8px 16px rgba(238, 255, 0, 0.959); 
-    transform: scale(1.05);
-  }
-  
-  ion-card-title {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: rgba(238, 255, 0, 0.959); 
-  }
-  
-  ion-card-content p {
-    font-size: 1em;
-    color: #ddd; 
-  }
-  
-  ion-button {
-    --background: rgba(238, 255, 0, 0.959); 
-    --color: #000;
-    --border-radius: 8px;
-  }
-  
-  ion-button:hover {
-    --background: rgba(238, 255, 0, 0.959); 
-    --color: #fff;
-  }
-  
-  
+  border-radius: 15px; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+ion-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+ion-button {
+  --border-radius: 20px; 
+  --background: green; 
+  --color: #fff; 
+}
+
+
+ion-button:hover {
+  background: #5A5BA6; 
+}
+
+ion-card-title {
+  color: green; 
+}
+
+
+ion-card-content p {
+  color: #333; 
+}

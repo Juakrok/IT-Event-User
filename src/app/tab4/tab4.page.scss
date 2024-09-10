@@ -8,6 +8,33 @@ ion-card-title{
   font-weight: bold;
 }
 
-ion-buttons{
-  color:black;
+ion-card {
+  border-radius: 15px; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+ion-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+ion-card-title {
+  color: green; 
+}
+
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.qr-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; 
 }
